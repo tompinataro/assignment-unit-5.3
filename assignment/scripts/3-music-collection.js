@@ -40,8 +40,16 @@ console.log(album6);
 // After all are added, console.log the `myCollection` array
 console.log(myCollection);
 
+//- Create a function named `showCollection`. This function should:
+function showCollection(collection) {
+  // Loop through the `collection` and `console.log` each album's information formatted **within a single string**, like: `TITLE by ARTIST, published in YEARPUBLISHED`.
+  for (let i = 0; i < collection.length; i++) {
+    console.log(`${collection[i].title} by ${collection[i].artist}, published in ${collection[i].yearPublished}`);
+  }
+}
 
-
+// Test the `showCollection` function.
+showCollection(myCollection);
 
 
 
