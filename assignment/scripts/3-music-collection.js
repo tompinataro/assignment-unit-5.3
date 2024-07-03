@@ -52,6 +52,30 @@ function showCollection(collection) {
 showCollection(myCollection);
 
 
+//- Create a function named `findByArtist`. This function should:
+function findByArtist(collection, artist) {
+  // Create an empty array to hold any matching results, if any.
+  let matchingAlbums = [];
+
+  // Loop through the `collection` and add any album objects with a matching artist to the array.
+  for (let i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist) {
+      matchingAlbums.push(collection[i]);
+    }
+  }
+
+  // Return the array with the matching results. (If no results are found, an empty array should be returned.)
+  return matchingAlbums;
+}
+
+// Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. Check that for artists with multiple matches, all are returned.
+console.log(findByArtist(myCollection, "Pink Floyd"));
+console.log(findByArtist(myCollection, "The Beatles"));
+console.log(findByArtist(myCollection, "Led Zeppelin"));
+
+
+
+
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
