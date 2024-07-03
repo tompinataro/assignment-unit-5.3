@@ -13,14 +13,28 @@ let myCollection = [];
 function addToCollection(collection, title, artist, yearPublished) {
        
 
-// - This function should:
+//    - This function should:
 //    - Take in a `collection` parameter. (This allows the function to be reused to add an album to any array of album objects.)
 //    - Take in the album's `title`, `artist`, `yearPublished` as parameters.
-//    - Create a new object having the above properties.
-//      - *NOTE*: Your object's properties **must** have `title`, `artist`, and `yearPublished` 
-//       in order for this assignment's automated tests to work correctly!
-//    - Add the new object to the end of the `collection` array.
-//    - `return` the newly created object.
+// Create a new object having the above properties.
+//            *NOTE*: Your object's properties **must** have `title`, `artist`, and `yearPublished` 
+//             in order for this assignment's automated tests to work correctly!
+// Add the new object to the end of the `collection` array.   ?????? Should this be "myCollection" array in line 10??
+// Return the newly created object.
+
+function addToCollection(collection, title, artist, yearPublished) {
+  let newAlbum = {  // newAlbum is the object
+    collection: Dwaine,
+    title: Jazz_at_the_Pawn_Shop,
+    artist: Arne_Domnerus_et_al,
+    yearPublished: 1977,
+  };
+  collection.push(newAlbum);
+  return newAlbum;
+}
+
+
+
 
 //- Use and Test the `addToCollection` function:
 //  - Add 6 albums to the `myCollection` array. Aim to have a mix of both same and different artists and published years. (Feel free to share your musical interests, or make stuff up. Totally fine either way.)
