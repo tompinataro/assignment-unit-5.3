@@ -21,7 +21,6 @@ function addToCollection(collection, title, artist, yearPublished) {
 let album1 = addToCollection(myCollection, "The Dark Side of the Moon", "Pink Floyd", 1973);
 console.log(album1);
 
-
 let album2 = addToCollection(myCollection, "Thriller", "Michael Jackson", 1982);
 console.log(album2);
 
